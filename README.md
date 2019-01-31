@@ -1,2 +1,2 @@
-# gts
+# Turnos
 Api para reserva de turnos
