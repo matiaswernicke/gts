@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+ <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/menu/gts.ico">
+
+	<!-- Poner en todos -->
+	<script type="text/javascript" src="scripts/validar_usuario.js"></script>
+	<script type="text/javascript" src="scripts/leerDocumento.js"></script>
+    <script type="text/javascript" src="scripts/Cookie_swci.js"></script>
+	<script type="text/javascript" src="scripts/salir.js"></script>
+	<script src="js/bootbox.min.js"></script>
+	<!-------------------------------->
+	<script type="text/javascript" src="scripts/entroReservarTurno.js"></script>
+	<script type="text/javascript" src="scripts/reservarTurnoConfirma.js"></script>
+	<script type="text/javascript" src="scripts/turnos_pdf.js"></script>
+	
+	<script defer src="scripts/fontawesome-all.js"></script>
+    <title>GTS Pilar</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/offcanvas.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+ 
+     <!-- turnose CSS este tiene que cargarse ultimo-->
+    <link href="css/gts_turnos.css" rel="stylesheet">
+    <!-- Alertas -->
+	<link href="build/css/alertify.css" rel="stylesheet">
+	<link href="build/css/themes/bootstrap.css" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href="build/toastr.min.css" rel="stylesheet" type="text/css" /> -->
+	 </head>
+  <body onLoad="entroReservarTurno()" class="bg-light fondo">
+
+   <!-- Encabezado -->
+    <div class="row">
+		<script src="scripts/encabezado.js"></script>
+    </div>
+	<!-- Fin encabezado -->
+
+    <main role="main" class="container">
+    <!-- Esta parte se cambia de acuerdo a cada pantalla -->
+	<div id="principal">
+    	<!-- ################################################### -->
+
+		<div class="d-flex p-3 my-3 box-shadow" > <!-- style="background-color:#ffc40075" -->
+			<div class="container" style="background-color:#F3F1F1">
+            	<div id="titulo" class="h5 text-center text-danger">Complete sus datos</div>
+                <div class="row text-left my-3" >
+                	<div class="col-12">Empresa</div>
+                	<div class="col-12"><input type="text" class="form-control" id="empresa" placeholder="Empresa"></div>
+                	<div class="col-12">E-mail empresa</div>
+                	<div class="col-12"><input type="text" class="form-control" id="email_empresa" placeholder="e-mail de la empresa"></div>
+                </div>
+                <div class="row text-left my-3" style="background-color: darkgray">
+                	<div class="col-12">Apellido y Nombre</div>
+                	<div class="col-12"><input type="text" class="form-control" id="nombre" placeholder="Apellido y Nombre"></div>
+                	<div class="col-12">E-mail</div>
+                	<div class="col-12"><input type="text" class="form-control" id="email" placeholder="e-mail"></div>
+                	<div class="col-12">Telefono</div>
+                	<div class="col-12"><input type="text" class="form-control" id="telefono" placeholder="Telefono"></div>
+	               	<div class="col-12">Patente 1</div>
+                	<div class="col-12"><input type="text" class="form-control" id="patente1" placeholder="Patente 1" onkeyup="javascript:this.value=this.value.toUpperCase();"></div>
+	               	<div class="col-12">Patente 2</div>
+                	<div class="col-12"><input type="text" class="form-control" id="patente2" placeholder="Patente 2" onkeyup="javascript:this.value=this.value.toUpperCase();"></div>
+ 				</div>						
+				<div class="row text-center my-3">
+                	<div class="col-12 col-lg-12">
+						<button type="submit" class="btn btn-block btn-success" onClick="reservarTurnoConfirma()">Confirmar</button>
+					</div>
+				</div>
+
+				<div class="row text-center my-3">
+                	<div class="col-12 col-lg-12">
+						<button type="submit" class="btn btn-block btn-success" onClick="location.href='menu.html';">Volver</button>
+					</div>
+				</div>
+                   
+
+						</div>
+		</div> <!--  /d-flex -->
+
+	
+	</div> <!-- /principal
+    </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+	<script src="build/jquery.min.js"></script>
+    <script src="bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="js/holder.min.js"></script>
+    <!-- <script src="js/offcanvas.js"></script> -->
+	
+	<script src="js/bootbox.min.js"></script>
+	<!-- <script src="build/toastr.min.js"></script> -->
+	</main>
+  </body>
+</html>
+
